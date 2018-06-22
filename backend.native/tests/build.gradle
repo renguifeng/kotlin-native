@@ -489,6 +489,11 @@ task runtime_basic_exit(type: RunStandaloneKonanTest) {
     expectedExitStatus = 42
 }
 
+task runtime_random(type: RunKonanTest) {
+    source = "runtime/basic/random.kt"
+    goldValue = "1804289383\n577655601\n"
+}
+
 task hello0(type: RunKonanTest) {
     goldValue = "Hello, world!\n"
     source = "runtime/basic/hello0.kt"

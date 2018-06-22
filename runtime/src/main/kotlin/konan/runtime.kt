@@ -22,3 +22,10 @@ external public fun initRuntimeIfNeeded(): Unit
 // Deiitializes Kotlin runtime for the current thread, if was inited.
 @SymbolName("Kotlin_deinitRuntimeIfNeeded")
 external public fun deinitRuntimeIfNeeded(): Unit
+
+
+@SymbolName("Kotlin_random")
+external public fun random(): Int
+
+@SymbolName("Kotlin_srandom")
+external public fun srandom(seed: Int): Unit
